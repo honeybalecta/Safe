@@ -1,0 +1,77 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#safe {
+    border: 5px solid #333;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #444;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+#display {
+    width: 220px;
+    height: 50px;
+    background-color: #009900;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #00ff00;
+}
+
+#numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+#enter {
+    grid-row: 4;
+    grid-column: 2 / 4;
+    background-color: #999;
+    width: 100%;
+}
+
+
+#back {
+    grid-row: 4;
+    grid-column: 1 / 2;
+}
+
+#enter {
+    grid-row: 4;
+    grid-column: 2 / 4;
+    background-color: #999;
+}
+
+#back:hover, #enter:hover {
+    background-color: #aaa;
+}
+#botschaft {
+    margin-top: 20px;
+}
